@@ -1,0 +1,9 @@
+{
+  "name": "monorepos-practice",
+  "version": "1.0.0",
+  "private": true,
+  "description": "monorepos practice",
+  "workspaces": [
+    "projects/*"
+  ]
+}
