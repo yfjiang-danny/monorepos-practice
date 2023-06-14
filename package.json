@@ -5,5 +5,9 @@
   "description": "monorepos practice",
   "workspaces": [
     "projects/*"
-  ]
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^7.0.1"
+  }
 }

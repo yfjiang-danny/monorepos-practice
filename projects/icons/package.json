@@ -2,7 +2,6 @@
   "name": "icons",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "files": [
     "dist/*"
   ],
@@ -25,8 +24,8 @@
     "start": "craco start",
     "build": "rm -fr dist && yarn svgr0 && node build.js && tsc --emitDeclarationOnly --project tsconfig.build.json",
     "svgr0": "yarn svgr1 && yarn svgr2",
-    "svgr1": "rm -fr ./src/icons/dist/normal/* && svgr ./src/icons/src/normal -d ./src/icons/dist/normal --config-file svgrrc.js --svgo-config svgo.config.js",
-    "svgr2": "rm -fr ./src/icons/dist/colorful/* && svgr ./src/icons/src/colorful -d ./src/icons/dist/colorful --config-file svgrrc.js --svgo-config svgo.colorful.config.js"
+    "svgr1": "rm -fr ./src/icons/dist/normal/* && svgr ./src/icons/src/normal -d ./src/icons/dist/normal --config-file svgrrc.js --index-template index.template.js",
+    "svgr2": "rm -fr ./src/icons/dist/colorful/* && svgr ./src/icons/src/colorful -d ./src/icons/dist/colorful --config-file svgrrc.colorful.js --index-template index.template.js"
   },
   "eslintConfig": {
     "extends": [

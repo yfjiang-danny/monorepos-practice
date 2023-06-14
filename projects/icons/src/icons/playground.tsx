@@ -28,7 +28,7 @@ export default function Playground() {
       return normalKeys?.map((k) => {
         return (
           <div id={k} key={k} className={classes["item"]}>
-            <SpriteIcon id={kebabCase(k).substring(1)} />
+            <SpriteIcon id={kebabCase(k.substring(3)).substring(1)} />
             <p>{k}</p>
           </div>
         );
@@ -43,7 +43,7 @@ export default function Playground() {
       return colorfulKeys?.map((k) => {
         return (
           <div id={k} key={k} className={classes["item"]}>
-            <SpriteIcon id={kebabCase(k).substring(1)} />
+            <SpriteIcon id={kebabCase(k.substring(3)).substring(1)} />
             <p>{k}</p>
           </div>
         );

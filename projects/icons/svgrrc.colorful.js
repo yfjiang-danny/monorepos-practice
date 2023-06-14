@@ -1,6 +1,6 @@
 // .svgrrc.js
 
-const svgoConfig = require("./svgo.config.js");
+const svgoConfig = require("./svgo.colorful.config.js");
 
 module.exports = {
   typescript: true,

@@ -15,7 +15,13 @@ module.exports = {
           {
             test: /\.svg$/,
             include: [path.resolve("src/icons/src/normal")],
-            use: [{ loader: "svg-sprite-loader", options: {} }, "svgo-loader"],
+            use: [
+              {
+                loader: "svg-sprite-loader",
+                options: {},
+              },
+              "svgo-loader",
+            ],
           },
           {
             test: /\.svg$/,
@@ -38,3 +44,5 @@ module.exports = {
     },
   },
 };
+
+// export default config;
