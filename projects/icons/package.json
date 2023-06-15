@@ -21,6 +21,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "postinstall": "yarn build",
     "start": "craco start",
     "build": "rm -fr dist && yarn svgr0 && node build.js && tsc --emitDeclarationOnly --project tsconfig.build.json",
     "svgr0": "yarn svgr1 && yarn svgr2",
